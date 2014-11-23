@@ -114,7 +114,10 @@ Creates a second, independent tidy data set  with the average of each variable f
 ```
 DT <- data.table(full_dataset)
 tidy<-DT[,lapply(.SD,mean),by="Subject,Activity"]
-message("Writting result to the file...")
+```
+
+Data is stored to tidy_data.txt file.
+```
 write.table(tidy,file="tidy_data.txt",row.names = FALSE)
 ```
 
