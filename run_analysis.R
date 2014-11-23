@@ -90,9 +90,3 @@ tidy<-DT[,lapply(.SD,mean),by="Subject,Activity"]
 message("Writting result to the file...")
 write.table(tidy,file="tidy_data.txt",row.names = FALSE)
 
-#id_labels = c("Subject","Activity")
-#data_labels = setdiff(colnames(full_dataset), id_labels)
-#melt_data = melt(full_dataset, id = id_labels, measure.vars = data_labels)
-## Apply mean function to dataset using dcast function
-#tidy_data = dcast(melt_data, Subject + Activity ~ variable, mean)
-#write.table(tidy_data, file = "./tidy_data.txt",row.name=FALSE)
