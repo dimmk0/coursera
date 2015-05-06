@@ -1,4 +1,4 @@
-image:
+image:  mischief/docker-golang
 env:
   - GOPATH=/var/cache/drone
 script:
