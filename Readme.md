@@ -17,3 +17,5 @@ The `CodeBook.md` describes the variables, the data, and the work that has been 
 The `run_analysis.R` is the script that has been used for this work. It can be loaded in R/Rstudio and executed without any parameters.
 
 The result of the execution is that a `tidy_data.txt` file is being created, that stores the data - mean and standard deviation of each measurement per activity&subject for later analysis.
+
+---------------------------------------------------------------------------
